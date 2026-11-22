@@ -1,0 +1,59 @@
+{
+  "n_videos": 1635,
+  "n_real": 485,
+  "n_ai": 1150,
+  "n_folds": 5,
+  "split_source": "data/fold_assignment.csv",
+  "pooled_5fold_auroc": 0.9181622590766473,
+  "mean_per_fold_auroc": 0.9185746302106679,
+  "sd_per_fold_auroc": 0.008378031551523571,
+  "per_fold_auroc": [
+    0.9141192290452712,
+    0.9215598386373823,
+    0.9176154190945764,
+    0.9086508292245631,
+    0.9309278350515464
+  ],
+  "mean_per_generator_5fold_auroc": 0.9190139947729007,
+  "loo_mean_auroc": 0.916568167074247,
+  "loo_sd_over_generators": 0.03717674423305549,
+  "per_generator_5fold": {
+    "Crafter": 0.9232340588010691,
+    "Gen2": 0.9556782850597284,
+    "HotShot": 0.9480601243409145,
+    "Lavie": 0.8625369789332139,
+    "ModelScope": 0.8869661266568484,
+    "MoonValley": 0.978470176730486,
+    "MorphStudio": 0.88491245295369,
+    "Show-1": 0.9413843888070691,
+    "Sora": 0.9118556701030928,
+    "WildScrape": 0.8970416853428956
+  },
+  "per_generator_loo": {
+    "Crafter": 0.9201412752959145,
+    "Gen2": 0.9572901325478644,
+    "HotShot": 0.945738569292516,
+    "Lavie": 0.8704527117884358,
+    "ModelScope": 0.8874742268041237,
+    "MoonValley": 0.9794366715758468,
+    "MorphStudio": 0.8762886597938145,
+    "Show-1": 0.93528297917105,
+    "Sora": 0.9076583210603829,
+    "WildScrape": 0.8859181234125206
+  },
+  "xgboost_params": {
+    "n_estimators": 200,
+    "max_depth": 4,
+    "learning_rate": 0.05,
+    "subsample": 0.8,
+    "random_state": 42,
+    "eval_metric": "logloss",
+    "tree_method": "exact"
+  },
+  "environment": {
+    "python": "3.13.14",
+    "numpy": "2.5.5",
+    "pandas": "3.1.1",
+    "xgboost": "2.1.4"
+  }
+}

@@ -1,0 +1,24 @@
+# Licence for the derived data tables
+
+The following files are released under the Creative Commons Attribution 4.0
+International licence (CC BY 4.0, <https://creativecommons.org/licenses/by/4.0/>):
+
+- `data/features_4d.csv` — the four optical-flow statistics computed for each clip
+- `data/fold_assignment.csv` — the five-fold assignment
+- `data/demamba_scores.csv` — per-clip scores produced by the released
+  foundation-model checkpoint
+- everything under `results/reference/`
+
+You may share and adapt these tables for any purpose, provided you give appropriate
+credit, link to the licence, and indicate whether changes were made. A convenient
+attribution is the citation in `CITATION.cff`.
+
+## What this licence does not cover
+
+The raw videos. Real clips come from MSR-VTT and AI clips from the GenVideo
+cross-generator split; both remain under the terms set by their original
+distributors and are not redistributed here. The clip identifiers in
+`features_4d.csv` let you match rows to your own licensed copies.
+
+The scores in `demamba_scores.csv` are derived outputs of a third-party model. They
+are released for research use; the model weights themselves are not included.

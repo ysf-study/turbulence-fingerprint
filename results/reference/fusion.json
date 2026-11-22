@@ -1,0 +1,95 @@
+{
+  "rows": [
+    {
+      "feature_set": "B: D3 only",
+      "dimensions": 1,
+      "training": "None (threshold)",
+      "pooled_auroc": 0.9724,
+      "macro_auroc": 0.973
+    },
+    {
+      "feature_set": "A: TF only",
+      "dimensions": 4,
+      "training": "XGBoost",
+      "pooled_auroc": 0.9182,
+      "macro_auroc": 0.919
+    },
+    {
+      "feature_set": "C: D3 only (control)",
+      "dimensions": 1,
+      "training": "XGBoost",
+      "pooled_auroc": 0.9755,
+      "macro_auroc": 0.9761
+    },
+    {
+      "feature_set": "D: TF + D3 (this work)",
+      "dimensions": 5,
+      "training": "XGBoost",
+      "pooled_auroc": 0.9834,
+      "macro_auroc": 0.9838
+    }
+  ],
+  "per_generator": {
+    "B: D3 only": {
+      "Crafter": 0.9791,
+      "Gen2": 0.9838,
+      "HotShot": 0.973,
+      "Lavie": 0.9676,
+      "ModelScope": 0.9707,
+      "MoonValley": 0.9812,
+      "MorphStudio": 0.9744,
+      "Show-1": 0.9781,
+      "Sora": 0.9739,
+      "WildScrape": 0.9486
+    },
+    "A: TF only": {
+      "Crafter": 0.9232,
+      "Gen2": 0.9557,
+      "HotShot": 0.9481,
+      "Lavie": 0.8625,
+      "ModelScope": 0.887,
+      "MoonValley": 0.9785,
+      "MorphStudio": 0.8849,
+      "Show-1": 0.9414,
+      "Sora": 0.9119,
+      "WildScrape": 0.897
+    },
+    "C: D3 only (control)": {
+      "Crafter": 0.9784,
+      "Gen2": 0.987,
+      "HotShot": 0.9769,
+      "Lavie": 0.9708,
+      "ModelScope": 0.9751,
+      "MoonValley": 0.985,
+      "MorphStudio": 0.9771,
+      "Show-1": 0.9836,
+      "Sora": 0.9763,
+      "WildScrape": 0.9505
+    },
+    "D: TF + D3 (this work)": {
+      "Crafter": 0.9891,
+      "Gen2": 0.9919,
+      "HotShot": 0.9852,
+      "Lavie": 0.9705,
+      "ModelScope": 0.9821,
+      "MoonValley": 0.9946,
+      "MorphStudio": 0.985,
+      "Show-1": 0.9899,
+      "Sora": 0.9833,
+      "WildScrape": 0.966
+    }
+  },
+  "n_videos": 1635,
+  "split_source": "data/fold_assignment.csv",
+  "tree_method": "exact",
+  "xgboost_params": {
+    "n_estimators": 200,
+    "max_depth": 4,
+    "learning_rate": 0.05,
+    "subsample": 0.8,
+    "random_state": 42,
+    "eval_metric": "logloss",
+    "tree_method": "exact"
+  },
+  "note": "Table 9 prints B/C/D as macro (mean per-generator) values and A as the pooled value of the TF-only reference; both columns are written here."
+}

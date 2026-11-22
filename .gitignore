@@ -1,0 +1,40 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+.venv/
+venv/
+env/
+.ipynb_checkpoints/
+.pytest_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Outputs: the reference run is committed, everything else is scratch
+results/*
+!results/reference/
+!results/README.md
+
+# Local data
+*.mp4
+*.avi
+*.mov
+*.mkv
+*.npz
+*.npy
+*.pt
+*.pth
+*.zip
+
+# Editor / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# scratch
+out/
+scratch/

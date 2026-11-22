@@ -1,0 +1,5 @@
+feature_set,dimensions,training,pooled_auroc,macro_auroc
+B: D3 only,1,None (threshold),0.9724,0.973
+A: TF only,4,XGBoost,0.9182,0.919
+C: D3 only (control),1,XGBoost,0.9755,0.9761
+D: TF + D3 (this work),5,XGBoost,0.9834,0.9838

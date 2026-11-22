@@ -1,0 +1,8 @@
+# Optional: only the five tests in tests/test_features.py need this.  Every
+# experimental number in the paper is reproduced without it, because the
+# released tables already contain the extracted four statistics.
+#
+# `opencv-contrib-python` (requirements.txt bottom) also provides cv2 and is
+# what src/extract_features.py needs for the RAFT path; installing both at once
+# is not necessary -- either satisfies the tests.
+opencv-python-headless==4.12.0.88

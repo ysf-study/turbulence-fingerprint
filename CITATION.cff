@@ -1,0 +1,42 @@
+cff-version: 1.2.0
+message: "If you use this code or the released feature table, please cite the paper and this repository."
+type: software
+title: "Turbulence Fingerprint: code and derived data"
+abstract: >-
+  Code and derived data for the manuscript "Higher-Order Intermittency in Learned
+  Neural Motion Representations: A Testable Statistical Prediction". Contains the
+  four-dimensional optical-flow feature table for the 1,635-clip cross-generator
+  evaluation set, the five-fold assignment used in every experiment, per-clip
+  scores for the foundation-model baseline and the D3 detector, and the scripts
+  that regenerate the reported AUROCs.
+version: 1.1.0
+date-released: 2026-11-18
+license: MIT
+license-url: https://opensource.org/licenses/MIT
+authors:
+  - family-names: Yan
+    given-names: Shufei
+  - family-names: Gao
+    given-names: Dapeng
+    email: gaodap001@163.com
+    corresponding: true
+url: "https://github.com/ysf-study/turbulence-fingerprint"
+repository-code: "https://github.com/ysf-study/turbulence-fingerprint"
+# Uncomment and fill once Zenodo has minted the DOI (docs/PUBLISHING.md, step 2).
+# doi: "10.5281/zenodo.XXXXXXX"
+keywords:
+  - AI-generated video detection
+  - optical flow
+  - turbulence intermittency
+  - reproducibility
+  - interpretable machine learning
+preferred-citation:
+  type: article
+  title: "Higher-Order Intermittency in Learned Neural Motion Representations: A Testable Statistical Prediction"
+  authors:
+    - family-names: Yan
+      given-names: Shufei
+    - family-names: Gao
+      given-names: Dapeng
+  journal: Neurocomputing
+  year: 2026

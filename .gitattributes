@@ -1,0 +1,17 @@
+# Normalise line endings: the CSVs are generated on Windows and read anywhere.
+* text=auto eol=lf
+*.csv text eol=lf
+*.py text eol=lf
+*.md text eol=lf
+*.sh text eol=lf
+*.yml text eol=lf
+*.yaml text eol=lf
+*.toml text eol=lf
+Makefile text eol=lf
+Dockerfile text eol=lf
+CITATION.cff text eol=lf
+SHA256SUMS text eol=lf
+
+# Keep the data tables out of diff noise and out of linguist statistics.
+*.csv linguist-generated=true
+results/reference/*.csv linguist-generated=true

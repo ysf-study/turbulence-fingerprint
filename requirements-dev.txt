@@ -1,0 +1,11 @@
+# Development and CI dependencies.  The reference numbers only need
+# requirements.txt; nothing here changes an AUROC.
+pytest>=8
+ruff>=0.6
+pre-commit>=3.7
+pandas-stubs>=2.2
+
+# OpenCV is deliberately NOT here: it is only needed to exercise
+# src/feature_utils.py in the tests, and a missing wheel for your Python
+# version should not stop `pytest` from running the other 10 tests.  Install
+# requirements-features.txt if you want all 15.

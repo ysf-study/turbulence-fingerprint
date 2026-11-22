@@ -1,0 +1,32 @@
+{
+  "title": "Turbulence Fingerprint: code and derived data",
+  "upload_type": "software",
+  "access_right": "open",
+  "license": "MIT",
+  "version": "1.1.0",
+  "publication_date": "2026-11-18",
+  "description": "<p>Code and derived data for the manuscript <em>Higher-Order Intermittency in Learned Neural Motion Representations: A Testable Statistical Prediction</em>.</p><p>The archive contains the four-dimensional optical-flow feature table for the 1,635-clip cross-generator evaluation set, the fixed five-fold assignment used in every experiment, per-clip scores for the foundation-model baseline and for the D3 detector, the reference outputs of the published run, and the scripts that regenerate the reported AUROCs.</p><p>No raw videos are redistributed; clip identifiers allow the tables to be matched against GenVideo and MSR-VTT under their own licences.</p>",
+  "creators": [
+    {
+      "name": "Yan, Shufei"
+    },
+    {
+      "name": "Gao, Dapeng"
+    }
+  ],
+  "keywords": [
+    "AI-generated video detection",
+    "optical flow",
+    "turbulence intermittency",
+    "reproducibility",
+    "interpretable machine learning"
+  ],
+  "related_identifiers": [
+    {
+      "relation": "isSupplementTo",
+      "identifier": "Neurocomputing (submitted manuscript)",
+      "scheme": "other"
+    }
+  ],
+  "notes": "Reviewed against the manuscript submission version. Replace the GitHub owner placeholder in CITATION.cff before the first release."
+}

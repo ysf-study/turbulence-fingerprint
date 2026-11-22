@@ -1,0 +1,67 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "turbulence-fingerprint"
+version = "1.1.0"
+description = "Code and derived data for the turbulence-fingerprint manuscript (AI-generated video detection from optical-flow intermittency)"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [
+    { name = "Shufei Yan" },
+    { name = "Dapeng Gao", email = "gaodap001@163.com" },
+]
+keywords = [
+    "AI-generated video detection",
+    "optical flow",
+    "turbulence intermittency",
+    "reproducibility",
+]
+classifiers = [
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Topic :: Scientific/Engineering :: Physics",
+    "Topic :: Scientific/Engineering :: Image Recognition",
+]
+dependencies = [
+    "numpy==2.5.5",
+    "pandas==3.1.1",
+    "scikit-learn==1.9.1",
+    "scipy==1.18.1",
+    "xgboost==2.1.4",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8", "ruff>=0.6"]
+# Enables the five tests that need cv2; the reproduction path does not.
+featuretests = ["opencv-python-headless==4.12.0.88"]
+features = ["opencv-contrib-python==4.12.0.88", "torch>=2.2", "tqdm>=4.65"]
+
+[project.urls]
+Homepage = "https://github.com/ysf-study/turbulence-fingerprint"
+Issues = "https://github.com/ysf-study/turbulence-fingerprint/issues"
+
+# The modules live in src/ and are run as scripts from the repository root
+# (`python src/train_eval.py`); the installed entry points are for convenience.
+[tool.setuptools]
+package-dir = { "" = "src" }
+py-modules = ["feature_utils", "extract_features", "train_eval", "ablation", "fusion_eval"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-ra"
+markers = [
+    "slow: fits XGBoost models (about 20 s); deselected by `-m 'not slow'`",
+]
+
+[tool.ruff]
+line-length = 100
+target-version = "py310"
+extend-exclude = ["results", "data"]
+
+[tool.ruff.lint]
+# Errors and pyflakes only: this is a research package, not a style exercise.
+select = ["E4", "E7", "E9", "F"]
+ignore = ["E501"]
