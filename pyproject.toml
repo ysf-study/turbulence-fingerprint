@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "turbulence-fingerprint"
-version = "1.1.0"
+version = "1.1.1"
 description = "Code and derived data for the turbulence-fingerprint manuscript (AI-generated video detection from optical-flow intermittency)"
 readme = "README.md"
 requires-python = ">=3.10"
