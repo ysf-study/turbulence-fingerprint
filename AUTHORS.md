@@ -3,7 +3,7 @@
 | Name | Role | Contact |
 |---|---|---|
 | Shufei Yan | first author; method, experiments, code, data curation | — |
-| Dapeng Gao | corresponding author; supervision, manuscript review | gaodap001@163.com |
+| Dapeng Gao | corresponding author; supervision, manuscript review | ysfstudy@163.com |
 
 The full CRediT (contributor roles) statement is in the manuscript. For
 questions about this package — a number that does not reproduce, a missing file,
