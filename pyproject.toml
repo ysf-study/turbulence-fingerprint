@@ -11,7 +11,7 @@ requires-python = ">=3.10"
 license = { text = "MIT" }
 authors = [
     { name = "Shufei Yan" },
-    { name = "Dapeng Gao", email = "gaodap001@163.com" },
+    { name = "Dapeng Gao", email = "ysfstudy@163.com" },
 ]
 keywords = [
     "AI-generated video detection",
