@@ -22,7 +22,6 @@ authors:
     corresponding: true
 url: "https://github.com/ysf-study/turbulence-fingerprint"
 repository-code: "https://github.com/ysf-study/turbulence-fingerprint"
-# Uncomment and fill once Zenodo has minted the DOI (docs/PUBLISHING.md, step 2).
 doi: "10.5281/zenodo.24454375"
 keywords:
   - AI-generated video detection
