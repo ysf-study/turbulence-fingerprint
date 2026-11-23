@@ -3,7 +3,7 @@
 [![ci](https://github.com/ysf-study/turbulence-fingerprint/actions/workflows/ci.yml/badge.svg)](https://github.com/ysf-study/turbulence-fingerprint/actions/workflows/ci.yml)
 [![license: MIT](https://img.shields.io/badge/code-MIT-blue.svg)](LICENSE)
 [![data: CC BY 4.0](https://img.shields.io/badge/data-CC%20BY%204.0-lightgrey.svg)](LICENSE-data)
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.XXXXXXX.svg)](https://doi.org/10.5281/zenodo.XXXXXXX)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.24454375.svg)](https://doi.org/10.5281/zenodo.24454375)
 
 Reproducibility package for
 
